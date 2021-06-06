@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "template-addon",
+  "version": "${version}",
+
+  "name": "Template Addon",
+  "description": "An addon template for the Meteor Addon API.",
+  "authors": [
+    "seasnail8169"
+  ],
+  "contact": {
+    "issues": "https://github.com/MeteorDevelopment/meteor-addon-template/issues",
+    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template/",
+    "discord": "https://meteorclient.com/discord"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "meteordevelopment.addons.template.TemplateAddon"
+    ]
+  },
+  "mixins": [
+    "template.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x",
+    "meteor-client": "*"
+  }
+}
